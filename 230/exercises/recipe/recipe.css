@@ -1,0 +1,40 @@
+body {
+	font-family: "trebuchet ms", tahoma, verdana;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px solid gray;
+}
+article {
+	border: 10px solid transparent;
+	border-image: url(border.png) 20% round;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+h1 {
+	background-color: lightgray;
+	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+h2 {
+	font-style: italic;
+	background-image: url(kadayif.jpg);
+}
+li {
+	margin: 2px 0px 2px 0px;
+}
+img {
+	float: right;
+	clear: both;
+}
+footer {
+	background-color: lime;
+}
+.important {
+	color:red;
+	font-size: 110%;
+	background-color: yellow;
+}
+#ingredients {
+	background-color: lightblue;
+}
