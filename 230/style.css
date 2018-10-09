@@ -1,0 +1,82 @@
+:root {
+	--background-gray: #E8E8E8;
+	--matte-red: #B2331A;
+	--highlight-red: #FF4C29;
+	--matte-blue: #496BB2;
+	--deep-blue: #0847CC;
+}
+body {
+	background-color: var(--background-gray);
+}
+header {
+	margin-bottom: 2em;
+}
+h1 {
+	margin-top: 0.5em;
+	text-align: center;
+	font-family: "Merienda One", cursive;
+}
+.main {
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+ol li {
+	font-family: 'Lato', sans-serif;
+}
+ol li p {
+	margin-bottom: 0px;
+	color: var(--matte-red);
+}
+ul li {
+	margin-left: -1.5em;
+}
+a {
+	font-family: 'Lato', sans-serif;
+	color: var(--matte-red);
+}
+a:hover {
+	color: var(--highlight-red);
+}
+footer p {
+	margin-left: 2em;
+	font-family: 'Lato', sans-serif;
+}
+footer p:hover:after {
+	content: " Please contact me if the link doesn't work.";
+	font-family: 'Lato', sans-serif;
+}
+.sarcasm:before {
+	content: attr(data-fake);
+	color: var(--deep-blue);
+	font-style: italic;
+}
+.sarcasm:hover:before {
+	content: "";
+}
+.sarcasm:hover:after {
+	content: attr(data-actual);
+	color: var(--matte-blue);
+}
+.subsectionHeader {
+	margin-left: 1em;
+	font-family: 'Bitter', serif;
+	color: var(--matte-blue);
+}
+#photo img {
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	width: 30%;
+	border-radius: 50%;
+	border: 5px solid var(--matte-red);
+}
+#photo img:hover {
+	border-color: var(--highlight-red);
+}
+#betterphoto {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: #D0D0D0;
+}

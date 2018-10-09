@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="230.css">
 	<title>Brandon's 230 Page</title>
+	<!--I always use Bootstrap, at minimum to get around the default box model-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!--Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+	<!--My stylesheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<article>
 		<header>
 			<h1>Brandon's 230 Page</h1>
 		</header>
-		<hr>
 		<section id="photo">
 			<img src="me.jpg" alt="Trust me it's me.">
-			<span class="editorNote"><p>*A better photo is coming soon.</p></span>
 		</section>
-		<main id="bio">
+		<section class="main">
 			<p>
-				Hello! My name is Brandon Greet. I am of course a second year Game Design student at <em>University of Rochester<em>. I hope 
-				to make my websites look better and be more interactive in this class. Specifically, I want to learn JS libraries like pixiJS 
-				that would create fluid web apps. One day I hope to be leading a dev team, creating AAA titles, but now I'm exploring 
+				<!--It's very messy, mostly because the sarcasm spans came as an afterthought-->
+				Hello! My name is Brandon Greet. I am of course a second year <span class="sarcasm" data-fake="Medical Engineer" 
+				data-actual="Game Design & Development"></span> student at <span class="sarcasm" data-fake="University of Rochester" 
+				data-actual="Rochester Institute of Technology"></span>. I hope 
+				to make my websites look better and be more interactive in this class. Specifically, I want to learn <span class="sarcasm"
+				data-fake="Ruby on Rails" data-actual="JS libraries like pixiJS"></span> 
+				and create fluid web apps. One day I hope to be leading a dev team, creating AAA titles, but now I'm exploring 
 				everything RIT has to offer me. When I graduate, I want to be looking forward to an exciting job in the industry. Now, as for 
-				two of my interests, I love music, especially rock, and playing my guitar of course.
+				two of my interests, I love music, both listening to and playing my <span class="sarcasm" data-fake="violin" data-actual="guitar">
+				</span>, hanging out with friends, anything to do with the ocean, and coding across a wide range of applications.
 			</p>
-			<span class="editorNote"><p>Video games are included as a given.</p></span>
-		</main>
+		</section>
 		<section id="Projects">
-			<h2>Major Projects</h2>
+			<h2 class="subsectionHeader">Major Projects</h2>
 			<ol>
-				<li><a href="#">Project 1</a></li>
+				<li><a href="project1">Project 1</a></li>
 				<li><a href="#">Project 2</a></li>
 				<li><a href="#">Project 3</a></li>
 				<li><a href="#">Project 4</a></li>
 			</ol>
-			<h3>Exercises</h2>
+			<h2 class="subsectionHeader">Exercises</h2>
 			<ol>
-				<li><a href="./exercises/recipe/kadayif.html">Recipe Project</a></li>
+				<li><a href="./exercises/recipe/kadayif.html">Recipe Exercise</a></li>
+				<li><a href="./exercises/darth/darth.html">Responsive Darth Exercise</a></li>
+				<li><p>Stylish Navigation</p></li>
+				<ul>
+					<li><a href="./exercises/StylishNavA">Part 1</a></li>
+					<li><a href="./exercises/StylishNavB">Part 2</a></li>
+					<li><a href="./exercises/StylishNavC/tabBarC.html">Part 3</a></li>
+				</ul>
 			</ol>
 		</section>
 		<hr>
 		<footer>
 			<p>
-				Click <a href="https://github.com/BrandonGreet/230website">here</a> for my class GitHub repo. Please contact me if the link
-				doesn't work.
+				Click <a href="https://github.com/BrandonGreet/230website" target="_blank">here</a> for my class GitHub repo.
 			</p>
-			<p><em>Sarcasm</em></p>
 		</footer>
 	</article>
 </body>

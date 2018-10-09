@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+	--snow-white: #EAEAF1;
+	--ice-blue: #AAE2FF;
+	--evergreen: #1E8554;
+	--cold-green: #72D463;
+	--wood-brown: #693912;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: var(--snow-white);
+}
+
+#page-head {
+	padding: 0.5em;
+	background-color: var(--ice-blue);
+	text-align: center;
+	border-bottom: 2px solid var(--wood-brown);
+}
+
+#page-head h1 {
+	font-family: "Charmonman", cursive;
+	color: var(--evergreen);
+	font-size: 2.5em;
+}
+
+nav {
+	width: 100%;
+	padding: 2px;
+}
+
+nav a {
+	margin: 0em 1em 0em 1em;
+	padding: 1px 3px;
+	border: 1px solid var(--cold-green);
+	border-radius: 5px;
+	font-size: 1.2em;
+	color: var(--evergreen);
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+}
+
+nav a.current {
+	border: 2px solid var(--cold-green);
+}
+
+nav a:hover {
+	background-color: var(--cold-green);
+}
+
+main {
+	padding: 1em 12%;
+}
+
+main section {
+	margin: 1em 0em;
+	padding: 1em 0em;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+main h2 {
+	font-family: "Lato", sans-serif;
+	text-align: center;
+}
+
+main p {
+	font-family: "Open Sans", sans-serif;
+}
+
+#page-foot {
+	font-size: 1.1em;
+	font-family: "Lato", sans-serif;
+	color: var(--evergreen);
+	padding: 1em 4%;
+	background-color: var(--ice-blue);
+	border-top: 2px solid var(--wood-brown);
+}
+
+#page-foot a {
+	text-decoration: none;
+	color: var(--evergreen);
+}
+
+#page-foot a:hover {
+	color: var(--cold-green);
+}
+
+#page-foot p {
+	float: right;
+}

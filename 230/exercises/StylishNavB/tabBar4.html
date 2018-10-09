@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab Bar 4</title>
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		#navlist {
+			margin-top: 1em;
+			padding: 3px 0px;
+			bottom-border: 1px solid #778;
+			font: bold 12 Verdana, sans-serif;
+		}
+
+		#navlist li {
+			display: inline;
+		}
+
+		#navlist li a {
+			padding: 3px 0.5em;
+			border: 1px solid #778;
+			border-bottom: none;
+			background: #DDE;
+			text-decoration: none;
+		}
+
+		#navlist li a:link {
+			color: #448;
+		}
+
+		#navlist li a:visited {
+			color: #667;
+		}
+
+		#navlist li a:hover {
+			color: #000;
+			background-color: #AAE;
+			border-color: #227;
+		}
+
+		#navlist li a#current
+		{
+			background-color: white;
+			border-bottom: 1px solid white;
+		}
+	</style>
+</head>
+<body>
+	<ul id="navlist">
+		<li><a href="#" id="current">Home</a></li>
+		<li><a href="#">Proposal</a></li>
+		<li><a href="#">Documentation</a></li>
+		<li><a href="#">Project</a></li>
+	</ul>
+</body>
+</html>
