@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 :root {
-	--snow-white: #EAEAF1;
+	--snow-white: #EFEFF9;
 	--ice-blue: #AAE2FF;
 	--evergreen: #1E8554;
 	--cold-green: #72D463;
@@ -19,45 +19,134 @@ body {
 	background-color: var(--snow-white);
 }
 
-#page-head {
-	padding: 0.5em;
-	background-color: var(--ice-blue);
-	text-align: center;
-	border-bottom: 2px solid var(--wood-brown);
-}
-
 #page-head h1 {
 	font-family: "Charmonman", cursive;
 	color: var(--evergreen);
-	font-size: 2.5em;
 }
 
-nav {
-	width: 100%;
-	padding: 2px;
+#page-head {
+	padding: 0.5em;
+	background-color: var(--ice-blue);
+	border-bottom: 2px solid var(--wood-brown);
 }
 
-nav a {
-	margin: 0em 1em 0em 1em;
-	padding: 1px 3px;
-	border: 1px solid var(--cold-green);
-	border-radius: 5px;
+@media (max-width: 534px) {
+
+	#nav:before {
+		margin-left: 0.1em;
+		content: "Navigation";
+		font-size: 1.2em;
+		color: var(--evergreen);
+		font-family: "Lato", sans-serif;
+	}
+
+	#nav {
+		width: 6em;
+		transition: 0.5s;
+		height: 1.5em;
+		overflow: hidden;
+		border: 2px solid var(--wood-brown);
+		border-radius: 5px;
+	}
+
+	#nav li {
+		margin-left: 0.1em;
+		display: block;
+	}
+
+	#nav:hover {
+		transition: 0.5s;
+		height: 7.2em;
+		width: 8.5em;
+	}
+
+	#forest {
+		width: 90%;
+	}
+
+	#concept1 {
+		display: none;
+	}
+
+	#concept2 {
+		display: none;
+	}
+
+	#concept1small {
+		width: 90%;
+	}
+
+	#concept2small {
+		width: 90%;
+	}
+}
+
+@media (min-width: 534px) {
+
+	#page-head {
+		text-align: center;
+	}
+
+	#page-head h1 {
+		font-size: 2.5em;
+	}
+
+	#nav {
+		width: 100%;
+		padding: 2px;
+	}
+
+	#nav li {
+		display: inline-block;
+		margin: 0em 1em 0em 1em;
+		padding: 1px 3px;
+		border: 1px solid var(--wood-brown);
+		border-radius: 5px;
+	}
+
+	#nav li.current {
+		border: 2px solid var(--wood-brown);
+	}
+
+	#nav li:hover {
+		background-color: var(--cold-green);
+	}
+
+	#forest {
+		width: 50%;
+	}
+
+	#concept1 {
+		width: 80%;
+	}
+
+	#concept2 {
+		width: 80%;
+	}
+
+	#concept1small {
+		display: none;
+	}
+
+	#concept2small {
+		display: none;
+	}
+}
+
+#nav a {
 	font-size: 1.2em;
 	color: var(--evergreen);
 	text-decoration: none;
 	font-family: "Lato", sans-serif;
 }
 
-nav a.current {
-	border: 2px solid var(--cold-green);
-}
-
-nav a:hover {
-	background-color: var(--cold-green);
-}
-
 main {
 	padding: 1em 12%;
+}
+
+main h1 {
+	text-align: center;
+	font-family: "Charmonman", cursive;
 }
 
 main section {
@@ -69,7 +158,6 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
 }
 
 main h2 {
