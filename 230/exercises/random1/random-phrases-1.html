@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Random Phrases 1</title>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+		body {
+			margin: 0px;
+			padding: 0px;
+			background-color: #2F397F;
+			color: white;
+			font-family: "Open Sans", sans-serif;
+		}
+		main {
+			display: block;
+			float: center;
+			margin: 4% auto;
+			background-image: url(backgroundmoon.jpeg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 50%;
+			padding: 2%;
+		}
+		h1 {
+			font-size: 1.5em;
+		}
+		#credit {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<main> <!--Background image will be behind this-->
+		<h1>Random Astronaut Quotes</h1>
+		<br>
+		<blockquote cite="https://www.spaceanswers.com/space-exploration/20-inspirational-space-quotes-you-need-to-know/"></blockquote>
+		<p id="astronaut"></p>
+		<p id="credit">Made by Brandon Greet</p>
+	</main>
+	<script type="text/javascript">
+		'use strict';
+		let quotes = [
+									'“I’m coming back in… and it’s the saddest moment of my life.”',
+									'“I feel fine. How about you?”',
+									'”I didn’t feel like a giant. I felt very, very small.”',
+									'”When I first looked back at the Earth, standing on the Moon, I cried.”',
+									'“There is perhaps no better a demonstration of the folly of human conceits than this distant image of our tiny world.”',
+									'”The scenery was very beautiful. But I did not see The Great Wall [of China].”',
+									'“Anyone who sits on top of the largest hydrogen-oxygen fueled system in the world, knowing they’re going to light the bottom, and doesn’t get a little worried, does not fully understand the situation.”',
+									'“Okay, Houston, we’ve had a problem here.”'];
+		let authors = ['Ed White', 'Yuri Gagarin', 'Neil Armstrong', 'Alan Shepherd', 'Carl Sagan', 'Yang Liwei', 'John Young', 'John Swigert'];
+		let blockquote = document.querySelector("blockquote");
+		let author = document.querySelector("#astronaut");
+		let indexToUse = Math.floor(Math.random() * quotes.length);
+		blockquote.innerHTML = quotes[indexToUse];
+		author.innerHTML = "-" + authors[indexToUse];
+	</script>
+</body>
+</html>
