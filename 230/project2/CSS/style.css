@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+:root {
+	 --brightest-blue: #388AFF;
+	 --bright-blue: #337CE5;
+	 --blue: #2A68BF;
+	 --dark-blue: #1C457F;
+	 --darkest-blue: #0E2340;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+header {
+	background-color: var(--blue);
+	padding: 2em;
+	text-align: center;
+	border-bottom: 0.2em solid var(--darkest-blue);
+}
+
+header h1 {
+	margin-bottom: 0.5em;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a {
+	border: 0.1em solid var(--dark-blue);
+	border-radius: 5px;
+	padding: 0.5em;
+}
+
+nav h3 {
+	display: inline-block;
+}
+
+main {
+	background-color: var(--brightest-blue);
+	padding: 1em 5em;
+}
+
+main li {
+	margin: 0.2em 0em;
+}
+
+#searchMain {
+	text-align: center;
+}
+
+#outActivity {
+	color: lime;
+	font-size: 3em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form button {
+	padding: 0.5em;
+	background-color: var(--darkest-blue);
+	border: 0.1em solid var(--dark-blue);
+	font-size: 1.7em;
+	border-radius: 5px;
+	color: white;
+}
+
+form button:hover {
+	cursor: pointer;
+}
+
+form button, form input {
+	margin: 1.8em;
+}
+
+footer {
+	background-color: var(--blue);
+	padding: 1em 2em;
+	border-top: 0.2em solid var(--darkest-blue);
+}
+
+footer p {
+	float: right;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Help! I'm bored!</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+	<header>
+		<h1>Help! I'm bored!</h1>
+		<nav>
+			<a href="index.html"><h3>Main Application</h3></a>
+			<a href="" class="current"><h3>Documentation</h3></a>
+		</nav>
+	</header>
+	<main>
+		<ul>
+			<li>
+				<h3>Explanation</h3>
+				<p>This page documents the development of "Help! I'm Bored!"</p>
+			</li>
+			<li>
+				<h3>API Chosen</h3>
+				<p>
+					Bored API is a fairly straight-forward service. A user submits an http request and the api responds with an activity represented by 
+					a JSON object. Each object contains several values which can be used to sort the possible responses. No authentication required.
+				</p>
+			</li>
+			<li>
+				<h3>Connecting to Bored API</h3>
+				<p>
+					In order to successfully connect with Bored API, a proxy was set up using Heroku App. This is done by prepending the API request url 
+					with the proxy service. This has caused unreliable loading times when requesting a new activity from Bored API.
+				</p>
+			</li>
+			<li>
+				<h3>Functional api search</h3>
+				<p>You can now (clunk-ily) send a request to Bored API and get a request that is displayed on the website.</p>
+			</li>
+			<li>
+				<h3>Email form not functional</h3>
+				<p>The form for sending an email reminder is there but it has no functionality. As it turns out JS doesn't have that capability on its own</p>
+			</li>
+			<li>
+				<h3>Local storage set up for Bored API search</h3>
+				<p>All values for the api search are stored in localStorage and are displayed once a user revists the site</p>
+			</li>
+			<li>
+				<h3>Email reminder abandoned</h3>
+				<p>Another functionality will need to be implemented.</p>
+			</li>
+			<li>
+				<h3>Color scheme and app design completed</h3>
+				<p>App is basically done.</p>
+			</li>
+		</ul>
+	</main>
+	<footer>
+		<a href="https://people.rit.edu/btg5907/230/">IGME 230 Home</a>
+		<p>Brandon Greet, 2018</p>
+	</footer>
+</body>
+</html>
