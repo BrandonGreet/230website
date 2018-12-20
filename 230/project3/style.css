@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+.jumbotron {
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+}
+
+.my-name {
+	font-family: "Lobster Two", cursive;
+}
+
+.push-right {
+	text-align: right;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+footer {
+	padding-top: 1rem;
+}
+
+section {
+	padding-top: 3rem;
+}
